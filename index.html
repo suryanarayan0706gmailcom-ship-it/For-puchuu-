@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Forever, Puchuu ❤️</title>
+<meta name="description" content="A private digital keepsake, made only for you.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- CINEMATIC LOADING SCREEN -->
+<!-- ============================================= -->
+<section id="loader" class="loader" aria-label="Loading">
+  <div class="loader-glow"></div>
+  <div class="loader-heart" aria-hidden="true">
+    <svg viewBox="0 0 32 29" width="56" height="56">
+      <path d="M16 28.5 2.7 15.6C-1.6 11.3 0 4.2 6 1.7 10 0 14.2 1.4 16 5c1.8-3.6 6-5 10-3.3 6 2.5 7.6 9.6 3.3 13.9L16 28.5Z"/>
+    </svg>
+  </div>
+  <p class="loader-text">A small surprise is waiting for you... ❤️</p>
+</section>
+
+<!-- Ambient animated background, present throughout the site -->
+<div class="bg-aurora" aria-hidden="true"></div>
+<div class="bg-hearts" id="bgHearts" aria-hidden="true"></div>
+<div class="bg-sparkles" id="bgSparkles" aria-hidden="true"></div>
+<div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+<!-- ============================================= -->
+<!-- MAIN CONTENT -->
+<!-- ============================================= -->
+<main id="site" class="site" hidden>
+
+  <!-- 1. HERO WELCOME -->
+  <section id="hero" class="section hero" aria-label="Welcome">
+    <div class="glass-card hero-card reveal">
+      <p class="eyebrow">for the girl who reads every message twice</p>
+      <h1 class="script-heading">Hi Puchuu <span aria-hidden="true">🌸</span></h1>
+      <p class="hero-sub">This page was made only for you.</p>
+      <button class="btn-glow" id="beginBtn" type="button">Begin <span aria-hidden="true">❤️</span></button>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- 2. APOLOGY SECTION -->
+  <section id="apology" class="section apology" aria-labelledby="apology-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">before anything else</p>
+      <h2 id="apology-title" class="script-heading reveal">I'm sorry</h2>
+      <div class="glass-card text-card reveal">
+        <p>I've been turning this over in my mind, and I want to say it plainly: I was wrong, and your feelings about it are completely fair. Not "fair, but" — just fair, full stop.</p>
+        <p>I don't want to explain my way out of how you felt. I want to understand it. When something I did or said left you hurt, that matters more to me than being right ever could. You don't owe me quick forgiveness, and you don't owe me a smile before you're ready to give one.</p>
+        <p>What I can promise is this: I heard you. I'm not brushing it aside, and I'm not going to make you carry the weight of managing my guilt on top of your own hurt. You get to feel whatever you're feeling, for as long as you need to feel it.</p>
+        <p>I just wanted you to know, before anything else on this page — I see you, I'm listening, and I'm here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. STORY TIMELINE -->
+  <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">how we got here</p>
+      <h2 id="timeline-title" class="script-heading reveal">Our Story</h2>
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-date">19 February 2026 · 7:33 PM</span>
+            <h3>First Message</h3>
+            <p>The very first "hi" — the one neither of us knew would matter this much.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-date">28 February 2026 · 5:44 PM</span>
+            <h3>First Meet</h3>
+            <p>The moment a screen turned into a real person standing in front of me.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-date">4 March 2026</span>
+            <h3>First Call</h3>
+            <p>Hours felt like minutes. I remember not wanting it to end.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-date">29 April 2026 · 7:33 PM</span>
+            <h3>She Accepted My Proposal <span aria-hidden="true">❤️</span></h3>
+            <p>The best "yes" I have ever heard.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-date">29 April 2026</span>
+            <h3>Relationship Started <span aria-hidden="true">❤️</span></h3>
+            <p>And from here, everything after is "us."</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. REASONS I LOVE YOU -->
+  <section id="reasons" class="section reasons-section" aria-labelledby="reasons-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">fifty, and counting</p>
+      <h2 id="reasons-title" class="script-heading reveal">Reasons I Love You</h2>
+      <div class="reasons-grid" id="reasonsGrid"><!-- populated by script.js --></div>
+    </div>
+  </section>
+
+  <!-- 6. HIDDEN HEART GAME -->
+  <section id="heartgame" class="section heartgame-section" aria-labelledby="heartgame-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">a tiny game</p>
+      <h2 id="heartgame-title" class="script-heading reveal">Find the Hidden Heart</h2>
+      <p class="reveal heartgame-hint">Somewhere in this room, a little piece of my heart is hiding. Can you find it?</p>
+      <div class="heartgame-field" id="heartgameField">
+        <button class="hidden-heart" id="hiddenHeart" type="button" aria-label="A hidden heart">❤️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hidden heart popup -->
+  <div class="modal" id="heartModal" hidden>
+    <div class="glass-card modal-card">
+      <p>You found the little piece of my heart... <span aria-hidden="true">❤️</span></p>
+      <button class="btn-glow small" id="closeHeartModal" type="button">Close</button>
+    </div>
+  </div>
+
+  <!-- 8. LOVE LETTER -->
+  <section id="letter" class="section letter-section" aria-labelledby="letter-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">the letter</p>
+      <h2 id="letter-title" class="script-heading reveal">My Love Letter to You</h2>
+      <div class="glass-card letter-card reveal">
+        <p id="letterText" class="typewriter-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PROMISE SECTION -->
+  <section id="promises" class="section promises-section" aria-labelledby="promises-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">what I owe you, freely</p>
+      <h2 id="promises-title" class="script-heading reveal">My Promises</h2>
+      <div class="promises-grid" id="promisesGrid"><!-- populated by script.js --></div>
+    </div>
+  </section>
+
+  <!-- 10. RELATIONSHIP COUNTER -->
+  <section id="counter" class="section counter-section" aria-labelledby="counter-title">
+    <div class="section-inner">
+      <p class="eyebrow reveal">since 29 April 2026, 7:33 PM</p>
+      <h2 id="counter-title" class="script-heading reveal">Time, Together</h2>
+      <div class="counter-grid reveal" id="counterGrid">
+        <div class="counter-unit"><span class="counter-value" id="cYears">0</span><span class="counter-label">years</span></div>
+        <div class="counter-unit"><span class="counter-value" id="cMonths">0</span><span class="counter-label">months</span></div>
+        <div class="counter-unit"><span class="counter-value" id="cDays">0</span><span class="counter-label">days</span></div>
+        <div class="counter-unit"><span class="counter-value" id="cHours">0</span><span class="counter-label">hours</span></div>
+        <div class="counter-unit"><span class="counter-value" id="cMinutes">0</span><span class="counter-label">minutes</span></div>
+        <div class="counter-unit"><span class="counter-value" id="cSeconds">0</span><span class="counter-label">seconds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FINAL SURPRISE -->
+  <section id="finale" class="section finale-section" aria-labelledby="finale-title">
+    <div class="finale-stars" id="finaleStars" aria-hidden="true"></div>
+    <div class="section-inner finale-inner">
+      <p class="eyebrow reveal">one last thing</p>
+      <h2 id="finale-title" class="script-heading reveal">Are You Ready?</h2>
+      <button class="btn-glow reveal" id="finaleBtn" type="button">Tap here if you're ready <span aria-hidden="true">❤️</span></button>
+      <p id="finaleText" class="finale-text" hidden></p>
+    </div>
+    <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Made with endless love by</p>
+    <p class="footer-name">Your Sweetheart Surya <span aria-hidden="true">❤️</span></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
